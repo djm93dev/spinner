@@ -1,0 +1,45 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+#spinner {
+    background-color: #fff;
+    width: 1px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+}
+
+#slider{
+    margin-bottom: 1rem;
+
+}
+
+input{
+    display: flex;
+    min-width: 400px;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    font-size: 1.5em;
+    text-align: center;
+    justify-content: center;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#spinner {
+    animation: spin linear infinite;
+    animation-duration: 1000ms;
+}
